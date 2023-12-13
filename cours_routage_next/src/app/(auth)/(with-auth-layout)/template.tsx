@@ -1,3 +1,4 @@
+"use client"
 // Importation de la bibliothèque "next/link" pour gérer les liens
 import Link from "next/link";
 
@@ -6,6 +7,8 @@ import { usePathname } from "next/navigation";
 
 // Importation du fichier de styles CSS
 import "./styles.css";
+
+import { useState } from "react";
 
 // Définition des liens de navigation
 const navLinks = [
@@ -22,9 +25,12 @@ export default function AuthLayout({
 }) {
   // Utilisation de la fonction "usePathname" pour récupérer le chemin actuel
   const pathname = usePathname();
-
+  const [input, setInput]= useState("")
   return (
     <div>
+      <div>
+        <input value={input} onChange={e => setInput(e.target.value)} />
+      </div>
       {/* Génération des liens de navigation en fonction du tableau navLinks */}
       {navLinks.map((link) => {
         // Vérification si le chemin actuel commence par le href du lien
@@ -32,10 +38,12 @@ export default function AuthLayout({
 
         // Rendu du lien avec une classe différente en fonction de son état (actif ou non actif)
         return (
-          <Link href={link.href} key={link.name}>
-            <a className={isActive ? "font-bold mr-4" : "text-blue-500 mr-4"}>
+          <Link 
+          href={link.href} 
+          key={link.name}
+             className={isActive ? "font-bold mr-4" : "text-blue-500 mr-4"}>
               {link.name}
-            </a>
+            
           </Link>
         );
       })}
