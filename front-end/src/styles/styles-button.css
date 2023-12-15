@@ -1,0 +1,43 @@
+.boutton{
+    width: fit-content;
+    height: fit-content;
+    padding: 1vw 2.5vw;
+    border-radius: 15px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    transition: 0.4s;
+
+}
+.primary{
+    background-color: aquamarine;
+    color: blue;
+    color:gray;
+}
+.primary:hover{
+    background-color:blue ;
+    color: aquamarine;
+}
+.secondary{
+    background-color:blue ;
+    color: aquamarine;
+}
+.secondary:hover{
+    background-color: aquamarine;
+    color: blue;
+    color:gray;
+}
+.disabled {
+    background-color:gray;
+    opacity: 0.5;
+    color: black;
+}
+.small{
+    font-size: 1vw;
+}
+.medium{
+    font-size: 2vw;
+}
+.large{
+    font-size: 3vw;
+}

@@ -17,3 +17,10 @@ html{
 .text-red{
     color:red;
 }
+.entete{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: 1vw;
+}
