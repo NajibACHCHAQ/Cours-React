@@ -58,8 +58,8 @@ export const Button = ({
     // Rendu du composant bouton avec les classes CSS calculées en fonction des propriétés spécifiées
     return (
         <button
-            type="button"
-            className={clsx("button", variantStyles, sizeStyles, icoSize)}
+            type="submit"
+            className={clsx("boutton", variantStyles, sizeStyles, icoSize)}
             onClick={() => console.log("click")} // Action à effectuer lors du clic sur le bouton
             disabled={disabled}
         >

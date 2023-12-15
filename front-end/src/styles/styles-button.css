@@ -1,12 +1,14 @@
 .boutton{
     width: fit-content;
     height: fit-content;
-    padding: 1vw 2.5vw;
+    padding:1vw 2.5vw;
     border-radius: 15px;
     display: flex;
     text-align: center;
     align-items: center;
     transition: 0.4s;
+    border: none;
+
 
 }
 .primary{
