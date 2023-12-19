@@ -31,7 +31,7 @@ export default function Header() {
         </div>
         <h2><span className="animation-entete" id="typed"></span></h2>
         <div className="titre-container">
-          <Image src="/assets/boat.png" alt="Boat" width="100" height="100" />
+          <Image src="/assets/boat.png" alt="Boat" width="100" height="50" />
           <div className="sous-titre">Accompagne vos ambitions</div>
         </div>
       </header>

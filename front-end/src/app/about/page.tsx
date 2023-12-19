@@ -8,9 +8,7 @@ export default function About() {
       <>
         <Header/>
         <Seo title='ANCREATIVE' description=''></Seo>
-      <Typography components="h1" variant="display">
-       Brigitte 
-      </Typography>
+
       <div className='entete'>
         <Button  size='small'  >Text</Button>
         <Button  size='small'>Boutton2</Button>
@@ -29,6 +27,7 @@ export default function About() {
         <Button variant='secondary' size='large'>Boutton2</Button>
         <Button variant="disabled" disabled size='large'>Boutton2</Button>
       </div>
+      <script async src="script-quiz.js"></script>
       </>
     )
   }

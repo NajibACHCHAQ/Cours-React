@@ -29,6 +29,7 @@
 /* Gestion des images de l'entete */
 .entete img{
     width: 90%;
+    height: auto;
 }
 /* Style pour le texte animé de l'entete */
 .animation-entete {    
