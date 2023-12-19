@@ -23,7 +23,7 @@ export default function Header() {
   return (
     <>
       <header className="entete">
-      <Image className="logo-greta-region-entete" src="/assets/logo-greta-21.webp" alt="logo" />
+      <Image className="logo-greta-region-entete" src="/assets/logo-greta-21.webp" alt="Logo Greta" width="100" height="100" />
         <div id="typed-strings">
           <p>Une formation <strong>sur mesure</strong>.</p>
           <p>Une formation <strong>adaptée à vos besoins</strong>.</p>
@@ -31,7 +31,7 @@ export default function Header() {
         </div>
         <h2><span className="animation-entete" id="typed"></span></h2>
         <div className="titre-container">
-          <Image src="/assets/boat.png" alt="" />
+          <Image src="/assets/boat.png" alt="Boat" width="100" height="100" />
           <div className="sous-titre">Accompagne vos ambitions</div>
         </div>
       </header>
