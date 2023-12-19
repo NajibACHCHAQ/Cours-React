@@ -41,14 +41,15 @@ export default function Home() {
         setTask('');
         await fetchTasks();
       } else {
-        console.log('error');
+        console.log('Error creating task:', response.status);
       }
     } catch (error) {
-      console.log(error);
+      console.log('Error creating task:', error);
+    } finally {
+      setIsLoading(false);
     }
-    setIsLoading(false);
   };
-
+  
   // Fonction pour récupérer toutes les tâches depuis le serveur
   const fetchTasks = async () => {
     try {
