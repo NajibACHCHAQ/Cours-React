@@ -5,6 +5,8 @@ import '../styles/styles-button.css'
 import '../styles/styles-header.css'
 import '../styles/styles-navigation.css'
 import '../styles/style-quiz.css'
+import '../styles/typography.css'
+
 
 
 

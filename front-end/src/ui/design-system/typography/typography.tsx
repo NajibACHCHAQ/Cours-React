@@ -30,7 +30,7 @@ export const Typography = ({
     // Utilisation d'une instruction switch pour définir le style en fonction de la variante spécifiée
     switch (variant) {
         case "display":
-            variantStyle = "text-red-500";
+            variantStyle = "display";
             break;
         case "h1":
             variantStyle = "text-green-500";
@@ -42,7 +42,7 @@ export const Typography = ({
     }
 
     // Utilisation de clsx pour générer une liste de classes conditionnelles
-    return <Component className={clsx(variantStyle, className,"text-red")}>{children}</Component>;
+    return <Component className={clsx(variantStyle, className)}>{children}</Component>;
 };
 
 // Explications :

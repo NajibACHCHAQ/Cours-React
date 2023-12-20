@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBvWTKFe8WcqY3j8GYNVhL6pfzj-tBRfTs",
-  authDomain: "monkeycoder-264cd.firebaseapp.com",
-  projectId: "monkeycoder-264cd",
-  storageBucket: "monkeycoder-264cd.appspot.com",
-  messagingSenderId: "341564233725",
-  appId: "1:341564233725:web:ce70fc53a7283dec356b94"
+  apiKey: "AIzaSyB3hmleAPQadDkjKgGBkZ3T4vvXKdwivbQ",
+  authDomain: "greta-ulysse21.firebaseapp.com",
+  projectId: "greta-ulysse21",
+  storageBucket: "greta-ulysse21.appspot.com",
+  messagingSenderId: "196602407122",
+  appId: "1:196602407122:web:566720a25a5810ca7c250b"
 };
 
 // Initialize Firebase

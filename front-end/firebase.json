@@ -3,19 +3,8 @@
     "public": "out",
     "ignore": [
       "firebase.json",
+      "**/.*",
       "**/node_modules/**"
-    ],
-    "headers": [
-      {
-        "source": "**/*.@(webp)",
-        "headers": [
-          {
-            "key": "Content-Type",
-            "value": "image/webp"
-          }
-        ]
-      }
     ]
   }
 }
-

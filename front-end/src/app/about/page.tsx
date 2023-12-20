@@ -1,5 +1,6 @@
 "use client"
 import Header from "@/ui/components/header";
+import Navigation from "@/ui/components/navigation";
 import { Seo } from "@/ui/components/seo";
 import { Button } from "@/ui/design-system/button/button";
 import { Typography } from "@/ui/design-system/typography/typography";
@@ -10,8 +11,9 @@ export default function About() {
       <>
         <Header/>
         <Seo title='ANCREATIVE' description=''></Seo>
+        <Navigation/>
 
-
+      <Typography variant="display"> Hello World</Typography>
       <div className=''>
         <Button  size='small' icon={{icon:RiArrowRightDoubleLine}} iconPosition="right" >Text</Button>
         <Button  size='small'>Boutton2</Button>
