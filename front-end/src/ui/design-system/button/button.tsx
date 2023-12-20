@@ -1,12 +1,14 @@
 "use client"
 // Importation de la bibliothèque clsx pour gérer les classes conditionnelles
 import clsx from "clsx";
+import React from "react";
+import { IconProps } from "@/types/iconProps";
 
 // Définition de l'interface Props pour définir les propriétés acceptées par le composant
 interface Props {
     size?: "small" | "medium" | "large";
-    variant?: "primary" | "secondary" | "icon" | "disabled";
-    icon?: any;
+    variant?: "primary" | "secondary" | "ico" | "disabled";
+    icon?: IconProps;
     iconTheme?: "light" | "dark" | "grey";
     iconPosition?: "right" | "left" | "center";
     disabled?: boolean;
@@ -20,6 +22,7 @@ export const Button = ({
     variant = "primary",
     icon,
     iconTheme = "dark",
+    iconPosition,
     disabled,
     isLoading,
     children,
@@ -34,9 +37,18 @@ export const Button = ({
         case "secondary":
             variantStyles = "secondary";
             break;
-        case "icon":
-            variantStyles = "";
+        case "ico":
+            if (iconTheme === "dark"){
+                variantStyles ="primary rounded"
+            }
+            if (iconTheme === "light"){
+                variantStyles ="secondary rounded"
+            }
+            if (iconTheme === "grey"){
+                variantStyles ="basic rounded"
+            }
             break;
+            
         case "disabled":
             variantStyles = "disabled";
             break;
@@ -46,12 +58,15 @@ export const Button = ({
     switch (size) {
         case "small":
             sizeStyles = "small";
+            icoSize= 40;
             break;
         case "medium":
             sizeStyles = "medium";
+            icoSize= 70;
             break;
         case "large":
             sizeStyles = "large";
+            icoSize= 100;
             break;
     }
 
@@ -63,7 +78,17 @@ export const Button = ({
             onClick={() => console.log("click")} // Action à effectuer lors du clic sur le bouton
             disabled={disabled}
         >
+            {icon && variant === "ico"?(<icon.icon size={icoSize}/>):
+            (<>
+                {icon && iconPosition === "left" &&(
+                    <icon.icon size={icoSize}/>
+                )}
             {children}
+                {icon && iconPosition === "right" &&(
+                        <icon.icon size={icoSize}/>
+                    )}
+            </>) }
+            
         </button>
     );
 };

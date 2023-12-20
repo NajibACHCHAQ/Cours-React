@@ -1,6 +1,7 @@
-import {quizData} from ".quiz.js";
+"use server"
+import {quizData} from "quiz.js";
 
-function initializeQuiz() {
+export default function initializeQuiz() {
     // Initialisation des variables globales
     let timer;  // Déclarez la variable timer ici
     let totalScore = 0;

@@ -10,8 +10,6 @@
     border: none;
     margin: 0 auto;
     cursor: pointer;
-
-
 }
 .primary{
     background-color: aquamarine;
@@ -45,3 +43,21 @@
 .large{
     font-size: 3vw;
 }
+
+.rounded{
+    display: flex;
+    justify-content: center;
+    border-radius: 100px;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5vw;
+
+}
+.basic{
+    background: grey;
+}
+.basic:hover{
+    background: rgb(209, 209, 209);
+    color: rgb(59, 59, 59);
+}
+

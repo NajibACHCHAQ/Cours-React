@@ -6,7 +6,7 @@ export default function QuizContainer() {
   useEffect(() => {
     // Créer un élément de script
     const script = document.createElement('script');
-    script.src = './script-quiz.js'; // Spécifiez le chemin correct
+    script.src = 'script-quiz.js'; // Spécifiez le chemin correct
 
     // Ajouter le script à la fin du corps du document
     document.body.appendChild(script);

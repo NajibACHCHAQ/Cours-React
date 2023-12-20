@@ -1,16 +1,24 @@
-import Header from "@/ui/components/header";
-import QuizContainer from "@/ui/components/quiz";
+"use client"
+import Script from 'next/script'
+import QuizContainer from "@/ui/components/quiz-container";
 import { Button } from "@/ui/design-system/button/button";
+import React, { useState } from 'react';
 
+const QuizPage = () => {
+  const [quizStarted, setQuizStarted] = useState(false);
 
-export default function Quiz() {
-    return (
-      <>
-        <Header/>
-        <QuizContainer/>
-        <Button  size='medium'>Boutton2</Button>
-        
+  const startQuiz = () => {
+    // Vous pouvez effectuer des actions de démarrage du quiz ici
+    setQuizStarted(true);
+  };
 
-      </>
-    )
-  }
+  return (<>
+    
+        <QuizContainer />
+
+    <Script src="./script-quiz.js" />
+    </>
+  );
+};
+
+export default QuizPage;
