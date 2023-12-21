@@ -1,0 +1,15 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-form{
+    display: flex;
+    flex-direction: column;
+    border:2px solid grey;
+    border-radius: 10px;
+
+    width: fit-content;
+    height: fit-content;
+}

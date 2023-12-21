@@ -3,6 +3,8 @@ import Header from "@/ui/components/header";
 import { PartenairBar } from "@/ui/components/navigation/partenair-bar";
 import Navigation from "@/ui/components/navigation/navigation";
 import Link from "next/link";
+import Image from "next/image";
+import '@/styles/styles-contact.css'
 
 export default function Contact() {
   return (
@@ -11,7 +13,7 @@ export default function Contact() {
       <Navigation />
       <div className="page-info">
         <div className="info-contact">
-          <div>
+          <div className="containerAdress">
             <div className="info-adr">
               Lycée « Le Castel » 22, rue Daubenton 21000 Dijon
             </div>
@@ -59,17 +61,17 @@ export default function Contact() {
           <div className="info-access">
             <h2 className="info-adr">Comment Venir</h2>
             <div className="details-info">
-              Transport en commun <Link href="https://www.divia.fr/itineraires" target="_blank"><img src="../assets/logo-divia.png" alt="" /></Link>
+              Transport en commun <Link href="https://www.divia.fr/itineraires" target="_blank"><Image src="../assets/logo-divia.png" alt="" width={100} height={100} /></Link>
             </div>
             <div className="details-info">
-              Transport en commun <Link href="https://www.divia.fr/itineraires" target="_blank"><img src="../assets/logo-sncf.png" alt="" /></Link>
+              Transport en commun <Link href="https://www.divia.fr/itineraires" target="_blank"><Image src="../assets/logo-sncf.png" alt="" width={100} height={100}/></Link>
             </div>
             <h2 className="info-adr">Comment Venir</h2>
             <div className="details-info">
-              Transport en commun <Link href="https://www.divia.fr/itineraires" target="_blank"><img src="../assets/logo-divia.png" alt="" /></Link>
+              Transport en commun <Link href="https://www.divia.fr/itineraires" target="_blank"><Image src="../assets/logo-divia.png" alt="" width={100} height={100} /></Link>
             </div>
             <div className="details-info">
-              Transport en commun <Link href="https://www.divia.fr/itineraires" target="_blank"><img src="../assets/logo-divia.png" alt="" /></Link>
+              Transport en commun <Link href="https://www.divia.fr/itineraires" target="_blank"><Image src="../assets/logo-divia.png" alt="" width={100} height={100}/></Link>
             </div>
           </div>
           <iframe

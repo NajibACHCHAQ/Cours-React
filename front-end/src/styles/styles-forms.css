@@ -1,0 +1,16 @@
+
+@font-face {
+    font-family: 'Marianne';
+    src: url('./font_marianne_web/Marianne-Regular.woff2') format('woff2'),
+         url('./font_marianne_web/Marianne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.header-form{
+    font-size: 1vw;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    padding: 0.5vw;
+    font-family: 'Marianne', sans-serif;
+}

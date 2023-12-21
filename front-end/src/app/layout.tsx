@@ -8,8 +8,8 @@ import '../styles/style-quiz.css'
 import '../styles/typography.css'
 import '../styles/styles-partenairbar.css'
 import '../styles/styles-section.css'
-import '../styles/styles-contact.css'
-import '../styles/styles-scrolling-text.css'
+
+
 
 
 
@@ -47,6 +47,7 @@ export default function RootLayout({
     <script async src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="icon" href="../assets/boatgreta2.png" type="image/png"/>
+    <meta charSet='utf-8'/>
 </head>
       <body className={inter.className}>{children}</body>
     </html>
