@@ -5,6 +5,7 @@ import { Seo } from '@/ui/components/seo'
 import { Button } from '@/ui/design-system/button/button'
 import { Typography } from '@/ui/design-system/typography/typography'
 import { Section } from '@/ui/components/section'
+import { ScrollingText } from '@/ui/components/scrolling-text'
 
 
 export default function Home() {
@@ -12,8 +13,13 @@ export default function Home() {
     <>
       <Header/>
       <Navigation/>
-      <Section><div className="video-container"><iframe src="https://www.youtube.com/embed/7xIF9blpcGY" ></iframe></div>
-</Section>
+      <Section>
+        <div className="video-container">
+          <iframe src="https://www.youtube.com/embed/7xIF9blpcGY" >
+          </iframe>
+        </div>
+      </Section>
+      <ScrollingText/>
       <PartenairBar/>
     </>
   )

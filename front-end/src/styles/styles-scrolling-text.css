@@ -1,0 +1,41 @@
+/* -----------------Gestion du defilement de texte------------------- */
+
+/* Container de défilement de texte */
+.scrolling-text-container {
+    display: flex;
+    padding-bottom: 0.3vw;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #006982;
+    border-top: 0.5vw ridge #a6ba1f;
+    border-bottom: 0.5vw ridge #a6ba1f;
+    position: relative;
+    text-shadow: 2px 2px 2px rgba(66, 66, 66, 0.869);
+    z-index: 1!important;
+    box-shadow: 0.2vw 0.2vw 1.1vw 0.4vw rgba(53, 53, 53, 0.902); /* Responsive box shadow */
+
+}
+/* ----------------------Texte défilant--------------------------------*/
+.scrolling-text {
+    display: inline-block;
+    animation: scrollText 160s linear infinite;
+    font-size: 1.3vw;
+    color: beige;
+    z-index: 1;
+    transform: translate3d(0,0,0); /* GPU Acceleration */
+    will-change: transform;
+}
+/* Couleur du text defilant mis entre balise strong*/
+.scrolling-text strong {
+    color: #a6ba1f;
+}
+/* Animation de défilement de texte*/
+@keyframes scrollText {
+    0% {
+        transform: translateX(10%); /* Adjusted starting position */
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/*---------------------------------------------------------------*/
