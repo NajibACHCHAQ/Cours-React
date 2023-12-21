@@ -6,19 +6,64 @@
     display: flex;
     text-align: center;
     align-items: center;
-    transition: 0.4s;
+
     border: none;
     margin: 0 auto;
     cursor: pointer;
 }
 .primary{
-    background-color: aquamarine;
+    background-image: linear-gradient(
+  0deg,
+  hsl(221deg 100% 20%) 0%,
+  hsl(221deg 100% 26%) 6%,
+  hsl(221deg 100% 33%) 11%,
+  hsl(222deg 100% 40%) 17%,
+  hsl(222deg 100% 46%) 23%,
+  hsl(216deg 100% 50%) 29%,
+  hsl(207deg 100% 50%) 35%,
+  hsl(200deg 100% 50%) 41%,
+  hsl(194deg 100% 50%) 47%,
+  hsl(188deg 100% 50%) 53%,
+  hsl(189deg 100% 50%) 58%,
+  hsl(190deg 100% 50%) 64%,
+  hsl(191deg 100% 50%) 70%,
+  hsl(192deg 100% 50%) 75%,
+  hsl(195deg 100% 50%) 81%,
+  hsl(201deg 100% 50%) 86%,
+  hsl(208deg 100% 50%) 91%,
+  hsl(216deg 100% 50%) 96%,
+  hsl(228deg 100% 50%) 100%
+  
+);
     color: blue;
     color:gray;
+    transition: 6s;
 }
 .primary:hover{
-    background-color:blue ;
+    background-image: linear-gradient(
+        180deg,
+        hsl(221deg 100% 20%) 0%,
+        hsl(221deg 100% 26%) 6%,
+        hsl(221deg 100% 33%) 11%,
+        hsl(222deg 100% 40%) 17%,
+        hsl(222deg 100% 46%) 23%,
+        hsl(216deg 100% 50%) 29%,
+        hsl(207deg 100% 50%) 35%,
+        hsl(200deg 100% 50%) 41%,
+        hsl(194deg 100% 50%) 47%,
+        hsl(188deg 100% 50%) 53%,
+        hsl(189deg 100% 50%) 58%,
+        hsl(190deg 100% 50%) 64%,
+        hsl(191deg 100% 50%) 70%,
+        hsl(192deg 100% 50%) 75%,
+        hsl(195deg 100% 50%) 81%,
+        hsl(201deg 100% 50%) 86%,
+        hsl(208deg 100% 50%) 91%,
+        hsl(216deg 100% 50%) 96%,
+        hsl(228deg 100% 50%) 100%
+      );
     color: aquamarine;
+    
 }
 .secondary{
     background-color:blue ;

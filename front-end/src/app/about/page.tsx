@@ -1,6 +1,7 @@
 "use client"
 import Header from "@/ui/components/header";
-import Navigation from "@/ui/components/navigation";
+import { PartenairBar } from "@/ui/components/navigation/partenair-bar";
+import Navigation from "@/ui/components/navigation/navigation";
 import { Seo } from "@/ui/components/seo";
 import { Button } from "@/ui/design-system/button/button";
 import { Typography } from "@/ui/design-system/typography/typography";
@@ -36,6 +37,7 @@ export default function About() {
         <Button variant='secondary' size='large'>Boutton2</Button>
         <Button variant="disabled" disabled size='large'>Boutton2</Button>
       </div>
+      <PartenairBar/>
       </>
     )
   }

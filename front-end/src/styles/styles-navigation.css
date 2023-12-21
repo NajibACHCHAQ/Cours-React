@@ -16,6 +16,8 @@
     padding: 12px;
     backdrop-filter: blur(8px);
     margin: 0 auto;
+    font-family: 'Marianne', sans-serif;
+
 }
 /* Gestion des lien dans le menu */
 .menu a {

@@ -1,0 +1,46 @@
+.section {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 3vw; /* Responsive padding */
+    width: auto;
+    background: url(/assets/hexagon-background.png);
+    background-size: cover;
+    background-color: rgba(121, 180, 204, 0.185);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 2vw;
+    text-align: center;
+    color: rgba(22, 63, 227, 0.717);
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.section .video-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 50.25%; /* 16:9 Aspect Ratio (9 / 16 * 100) */
+}
+.section iframe {
+    border-radius: 2vw; /* Responsive border radius */
+    box-shadow: 0 0 2vw rgba(0, 0, 0, 0.3); /* Responsive box shadow */
+    width: 80%; /* Responsive width */
+    height: 80%; /* Responsive height */
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    margin-top: 5%;
+}
+@media only screen and (max-width: 600px) {
+    
+    .section {
+        padding: 5vw;
+        font-size: 5vw;
+        text-shadow: 0.5vw 0.2vw 0.5vw rgba(0, 0, 0, 0.776);
+    }
+}
