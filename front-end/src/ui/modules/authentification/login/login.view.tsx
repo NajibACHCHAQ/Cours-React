@@ -22,9 +22,9 @@ export const LoginView = ()=>{
                 <div className="header-form">
                     Creation compte user
                 </div>
-                <div className="body-form">
+                
                     <LoginForm/>
-                </div>
+                
             </BoxForm>
         </div>
     </div></>

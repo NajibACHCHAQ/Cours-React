@@ -14,6 +14,7 @@ interface Props {
     disabled?: boolean;
     isLoading?: boolean;
     children?: React.ReactNode;
+    type?:string;
 }
 
 // Définition du composant Button
@@ -26,6 +27,7 @@ export const Button = ({
     disabled,
     isLoading,
     children,
+    type
 }: Props) => {
     let variantStyles: string = "", sizeStyles: string = "", icoSize: number = 0;
 

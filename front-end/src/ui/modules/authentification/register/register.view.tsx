@@ -3,8 +3,14 @@ import Image from "next/image"
 import { FaUserCircle } from "react-icons/fa";
 import '@/styles/styles-forms.css'
 import { RegisterForm } from "./register-form";
+import { FormType } from "@/types/form";
 
+interface Props{
+    form:FormType
+}
 export const RegisterView = ()=>{
+
+
     return(
         <>
         <div className="container">
@@ -19,13 +25,13 @@ export const RegisterView = ()=>{
             </div>
             
             <div>
-                <BoxForm> 
+                <BoxForm > 
                     <div className="header-form">
                         Creation compte user
                     </div>
-                    <div className="body-form">
+                    
                         <RegisterForm/>
-                    </div>
+                    
                 </BoxForm>
             </div>
         </div>
@@ -33,3 +39,5 @@ export const RegisterView = ()=>{
             </>
     )
 }
+
+
