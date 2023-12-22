@@ -1,5 +1,5 @@
-"use server"
-import {quizData} from "quiz.js";
+
+import quizData from '@/app/quiz/quiz';
 
 export default function initializeQuiz() {
     // Initialisation des variables globales
@@ -19,16 +19,24 @@ export default function initializeQuiz() {
         showSection(quizData[currentSectionIndex]);
     }
 
-    // Fonction pour afficher une section spécifique du quiz
     function showSection(section) {
         currentQuestionIndex = 0;
+    
+        // Vérifier que section est défini
+        if (!section) {
+            console.error('La section n\'est pas définie.');
+            return;
+        }
+    
         // Mettez à jour le nom de la section sur la page
         const sectionNameElement = document.getElementById('section-name');
-        if (sectionNameElement) {
+        if (sectionNameElement && section.section) {
             sectionNameElement.innerText = `${section.section}`;
         }
+    
         showQuestion(section.questions[currentQuestionIndex]);
     }
+    
 
     // Fonction pour afficher une question spécifique
     function showQuestion(question) {
@@ -291,7 +299,13 @@ export default function initializeQuiz() {
     startQuiz();       
 }
 
-// Appelez la fonction d'initialisation du quiz
-initializeQuiz();
+// Modifiez votre fichier script-quiz.js
+// Vérifiez si nous sommes dans un environnement de navigateur avant d'utiliser document
+if (typeof document !== 'undefined') {
+    document.addEventListener("DOMContentLoaded", function () {
+      initializeQuiz();
+    });
+  }
+  
 
 

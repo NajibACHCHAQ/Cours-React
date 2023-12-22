@@ -3,11 +3,13 @@ import { Section } from "@/ui/components/section";
 import Link from "next/link";
 import '@/styles/styles-preinscription.css';
 import { PartenairBar } from "@/ui/components/navigation/partenair-bar";
+import Navigation from "@/ui/components/navigation/navigation";
 /* eslint-disable react/no-unescaped-entities */
 export default function PreInscription() {
     return (
       <>
       <Header/>
+      <Navigation />
         <Section>
           <p>
             Suite à la saisie du formulaire, vous serez dirigé(e) vers un test de niveau qui débutera immédiatement. Chaque question dispose d'un temps imparti de 30 secondes. Prévoyez entre 30 et 45 minutes pour l'ensemble du processus. Assurez-vous d'avoir suffisamment de temps devant vous avant de débuter le test.

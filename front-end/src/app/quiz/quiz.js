@@ -1018,4 +1018,4 @@ const quizData = [
     }
     
 ];
-export{quizData};
+export default{quizData};
