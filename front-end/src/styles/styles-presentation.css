@@ -1,0 +1,195 @@
+/* ------------------------Animation bateau-----------------------------*/
+/* gestion taile et position de la barre de défilement du bateau*/
+.navivation-boat {
+    height: 150px;
+    padding:23px;
+    position: relative;
+    left: 0;
+    overflow: hidden;
+    width: 100%; 
+    margin: 0 auto;
+
+}
+/* Gestion de la taille et position du bateau /animation */
+.navivation-boat img {
+    
+    position: absolute;
+    animation: slide 25s linear infinite;
+}
+/* Animation pour déplacer le bateau de gauche à droite de l'écran */
+@keyframes slide {
+    0%{transform: translateX(0%) translateY(5px) rotate(3deg);}
+    5%{transform: translateX(100%) translateY(10px) rotate(-3deg);}
+    10% {transform: translateX(200%) translateY(5px) rotate(3deg);}
+    15% {transform: translateX(300%) translateY(10px) rotate(-3deg);}
+    20% {transform: translateX(400%) translateY(5px) rotate(3deg);}
+    25% {transform: translateX(500%) translateY(10px) rotate(-3deg);}
+    30% {transform: translateX(600%) translateY(5px) rotate(3deg);}
+    35% {transform: translateX(700%) translateY(10px) rotate(-3deg);}
+    40% {transform: translateX(800%) translateY(5px) rotate(3deg);}
+    45% {transform: translateX(900%) translateY(10px) rotate(-3deg);}
+    50% {transform: translateX(1000%) translateY(5px) rotate(3deg);}
+    55%{transform: translateX(1100%) translateY(10px) rotate(-3deg);}
+    60%{transform: translateX(1200%) translateY(5px) rotate(3deg);}
+    65% {transform: translateX(1300%) translateY(10px) rotate(-3deg);}
+    70% {transform: translateX(1400%) translateY(5px) rotate(3deg);}
+    75% {transform: translateX(1500%) translateY(10px) rotate(-3deg);}
+    80% {transform: translateX(1600%) translateY(5px) rotate(3deg);}
+    85% {transform: translateX(1700%) translateY(10px) rotate(-3deg);}
+    90% {transform: translateX(1800%) translateY(5px) rotate(3deg);}
+    95% {transform: translateX(1900%) translateY(10px) rotate(-3deg);}
+    100% {transform: translateX(2000%) translateY(5px) rotate(3deg);}
+}
+
+/*------------------------------------------------------------------*/
+.titre-section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 0 auto;
+    color: white;
+    font-size: 4vw; /* Responsive font size */
+    width: 70%; /* Responsive width */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #0068826c;
+    padding: 2vw; /* Responsive padding */
+    border-radius: 5vw; /* Responsive border radius */
+    
+}
+@media screen and (max-width: 600px) {
+    .titre-section {
+        font-size: 6vw;
+    }
+}
+.card-container {
+    text-align: center;
+    width: 100%;
+    background: url(/assets/summer_background.webp);
+    background-size: cover;
+
+
+}
+.card-content {
+    width: 100%;
+    padding-bottom: 2vw; /* Responsive padding */
+    background: url(/assets/fon-eau.png);
+    opacity: 0.8;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr auto 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: -1px -1px 2vw rgba(65, 93, 149, 0.8); /* Responsive box shadow */
+    border-radius: 2px 0vw 0px 0vw; /* Responsive border radius */
+}
+.orientation{
+    font-size: 4vw;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+.card-content img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2vw; /* Responsive margin */
+    border-radius: 0.5vw; /* Responsive border radius */
+    box-shadow: -1px -1px 2vw rgba(65, 93, 149, 0.8); /* Responsive box shadow */
+}
+.card {
+    display: grid;
+    grid-template-rows: auto repeat(auto-fill, 1fr);
+    width: 60%; /* Responsive width */
+    min-width: 100px;
+    height: auto;
+    background-color: rgba(7, 48, 88, 0.679);
+    border-radius: 20px; /* Responsive border radius */
+    box-shadow: -1px -1px 2vw rgba(57, 56, 56, 0.65); /* Responsive box shadow */
+    background-color: rgba(255, 255, 255, 0.611);
+    margin: 2vw auto; /* Responsive margin */
+    resize: both;
+
+    border: 2px ridge #266b86;
+    font-size: 1.7vw; /* Responsive font size */
+    cursor: pointer;
+    position: relative;
+}
+.start .card {
+    width: 60%; 
+    margin-bottom: 10px; 
+}
+
+.card:hover .titre-card-parcours {
+    background-color: #020d5f;
+}
+.card:hover {
+    transform: scale(1.3) !important;
+    transition: 1.3s;
+    margin: 0 auto;
+    z-index: 2 !important;
+    position: relative;
+}
+@media screen and (max-width: 900px) {
+    .card {
+        font-size: 2vw; /* Adjust font size for smaller screens */
+    }
+    .card:hover {
+    transform: scale(1.51) !important;
+    transition: 1.3s;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2 !important;
+    }
+    .start {
+
+        justify-content: center;
+    }
+    .start-right
+    {
+        width: auto;
+    }
+    .start-left{
+        width: auto;
+    }
+    .mmm {
+        box-shadow: 0.6vw 0.6vw 2.4vw 1.2vw rgba(99, 99, 251, 0.756);
+    }
+}
+
+.start {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Responsive grid */
+    gap: 1vw; /* Responsive gap between columns */
+    height: 80%;
+}
+.titre-card-parcours {
+    display: grid;
+    grid-template-rows: auto auto;
+    border-radius: 20px 20px 0 0;
+    padding: 12px;
+    width: 100%;
+    height: fit-content;
+    background-color: #024c5f;
+    font-size: 2vw;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+.sous-titre-card {
+    font-size: 1.8vw;
+}
+.card-element {
+    width: 100%;
+    padding: 6px;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    color: #202131;
+}
+.card-element span {
+    color: #1f27ba;
+    font-weight: bolder;
+}
+.sous-titre-card-parcours {
+    font-size: 60%;
+    font-weight: bold;
+    color: greenyellow;
+}

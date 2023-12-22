@@ -7,7 +7,7 @@ export default function Navigation() {
 
     <nav className="menu">
       <ActiveLink href="/">Accueil</ActiveLink>
-      <ActiveLink href="/about">Pr&eacute;-inscription</ActiveLink>
+      <ActiveLink href="/pre-inscription">Pr&eacute;-inscription</ActiveLink>
       <ActiveLink href="/quiz">Plus d&apos;Infos</ActiveLink>
       <ActiveLink href="/actu">Actualit&eacute;s</ActiveLink>
       <ActiveLink href="/contact">Contact</ActiveLink>

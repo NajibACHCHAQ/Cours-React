@@ -1,0 +1,107 @@
+.actu-container{
+
+    display: grid;
+    grid-template-rows: auto repeat(auto-fill, auto);
+    width: 90%;
+    height: 38vw;
+    background-color: aqua;
+    margin: 0 auto;
+    padding: 2vw;
+    border-radius: 20px;
+    background: url(/assets/hexagon-background.png);
+    background-color: rgba(240, 248, 255, 0.546);
+
+    background-size: contain;
+    background-attachment: fixed;
+    margin-top: 2vw;
+    border: 12px ridge rgba(92, 127, 174, 0.737);
+    margin-bottom: 2vw;
+    box-shadow: -1px -1px 37px 4px #595858b2;
+    overflow:scroll;
+
+}
+body{
+    background: url(/assets/hexagon-background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+
+}
+
+.barre-recherche{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    width: 90%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+
+    height: fit-content;
+}
+select{
+    border: 2px solid blue;
+    border-radius: 20px;
+    padding: 6px;
+    float: right;
+
+}
+
+.actu-details{
+    display: grid;
+    width: 95%;
+    grid-template-rows: auto auto;
+    height: 230px;
+    background-color: rgba(238, 238, 238, 0.536);
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: -1px -1px 37px 4px #595858b2;
+
+}
+.actu-titre{
+    height: fit-content;
+    text-align: center;
+    width: 100%;
+    background: rgba(255, 235, 205, 0.409);
+    padding: 12px;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0px 2px 6px rgb(16, 15, 15);
+}
+.titre-actu{
+    display: flex;
+    font-size: 2.5vw;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background: url(/assets/fond-mur-texture-beton-min.webp);
+    background-size: cover;
+    width: fit-content;
+    border-radius: 100px;
+    padding: 10px;
+    margin: 0 auto;
+    box-shadow: 0px 2px 6px rgb(16, 15, 15);
+    border: 6px ridge rgba(92, 127, 174, 0.737);
+}
+.titre-actu span{
+    font-size: 4vw;
+}
+
+  
+  .fb-page {
+    margin-left: 1vw;
+
+  }
+.container-actu{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 1vw;
+}
+.actu-ulysse{
+width: 90%;
+
+}

@@ -6,12 +6,15 @@ import { Button } from '@/ui/design-system/button/button'
 import { Typography } from '@/ui/design-system/typography/typography'
 import { Section } from '@/ui/components/section'
 import { ScrollingText } from '@/ui/components/scrolling-text'
+import { Presentation } from '@/ui/components/presentation'
+import { TitreSite } from '@/ui/components/titre-site'
 
 
 export default function Home() {
   return (
     <>
       <Header/>
+      <TitreSite/>
       <Navigation/>
       <Section>
         <div className="video-container">
@@ -20,7 +23,10 @@ export default function Home() {
         </div>
       </Section>
       <ScrollingText/>
+      <Presentation/>
+      <ScrollingText/>
       <PartenairBar/>
+
     </>
   )
 }
