@@ -108,7 +108,9 @@ tr {
         font-size: 3vw;
     }
 }
-
+td,th{ 
+    background-color: rgba(39, 77, 139, 0.645); 
+    font-weight: bold; }
 
 
 

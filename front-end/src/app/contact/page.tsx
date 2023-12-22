@@ -21,7 +21,7 @@ export default function Contact() {
             <div className="info">agencecom.greta21@ac-dijon.fr</div>
 
             <table>
-              <thead style={{ backgroundColor: "rgba(39, 77, 139, 0.645)", fontWeight: "bold" }}>
+              <thead>
                 <tr>
                   <th>Jour</th>
                   <th>Matin</th>
@@ -30,27 +30,27 @@ export default function Contact() {
               </thead>
               <tbody>
                 <tr>
-                  <td style={{ backgroundColor: "rgba(39, 77, 139, 0.645)" }}>Lundi</td>
+                  <td >Lundi</td>
                   <td className="am-hour">9h00 à 12h00</td>
                   <td className="pm-hour">14h00 à 17h00</td>
                 </tr>
                 <tr>
-                  <td style={{ backgroundColor: "rgba(39, 77, 139, 0.645)" }}>Mardi</td>
+                  <td >Mardi</td>
                   <td className="am-hour">9h00 à 12h00</td>
                   <td className="pm-hour">14h00 à 17h00</td>
                 </tr>
                 <tr>
-                  <td style={{ backgroundColor: "rgba(39, 77, 139, 0.645)" }}>Mercredi</td>
+                  <td >Mercredi</td>
                   <td className="am-hour">9h00 à 12h00</td>
                   <td className="pm-hour">14h00 à 17h00</td>
                 </tr>
                 <tr>
-                  <td style={{ backgroundColor: "rgba(39, 77, 139, 0.645)" }}>Jeudi</td>
+                  <td >Jeudi</td>
                   <td className="am-hour">9h00 à 12h00</td>
                   <td className="pm-hour">14h00 à 17h00</td>
                 </tr>
                 <tr>
-                  <td style={{ backgroundColor: "rgba(39, 77, 139, 0.645)" }}>Vendredi</td>
+                  <td >Vendredi</td>
                   <td className="am-hour">9h00 à 12h00</td>
                   <td className="pm-hour">14h00 à 17h00</td>
                 </tr>

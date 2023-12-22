@@ -1,4 +1,3 @@
-import { Inter } from 'next/font/google'
 
 import './globals.css'
 import '../styles/styles-button.css'
@@ -19,7 +18,6 @@ import '../styles/styles-section.css'
 
 
 
-const inter = Inter({ subsets: ['latin'] })
 
 
 
@@ -49,7 +47,7 @@ export default function RootLayout({
     <link rel="icon" href="../assets/boatgreta2.png" type="image/png"/>
     <meta charSet='utf-8'/>
 </head>
-      <body className={inter.className}>{children}</body>
+      <body >{children}</body>
     </html>
   )
 }
