@@ -96,6 +96,8 @@ tr {
 @media only screen and (max-width: 768px) {
     .info-contact {
         grid-template-columns: 1fr;
+        justify-content: center;
+        text-align: center;
     }
 
     table {

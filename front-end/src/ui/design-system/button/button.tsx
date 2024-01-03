@@ -3,6 +3,7 @@
 import clsx from "clsx";
 import React from "react";
 import { IconProps } from "@/types/iconProps";
+import './styles-button.css'
 
 // Définition de l'interface Props pour définir les propriétés acceptées par le composant
 interface Props {

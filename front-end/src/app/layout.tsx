@@ -1,23 +1,10 @@
 
 import './globals.css'
-import '../styles/styles-button.css'
 import '../styles/styles-header.css'
 import '../styles/styles-navigation.css'
-import '../styles/style-quiz.css'
 import '../styles/typography.css'
 import '../styles/styles-partenairbar.css'
 import '../styles/styles-section.css'
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -6,8 +6,8 @@ import { Button } from '@/ui/design-system/button/button'
 import { Typography } from '@/ui/design-system/typography/typography'
 import { Section } from '@/ui/components/section'
 import { ScrollingText } from '@/ui/components/scrolling-text'
-import { Presentation } from '@/ui/components/presentation'
 import { TitreSite } from '@/ui/components/titre-site'
+import { Presentation } from '@/ui/components/presentation/presentation'
 
 
 export default function Home() {

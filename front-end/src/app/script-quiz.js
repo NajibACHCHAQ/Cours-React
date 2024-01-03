@@ -1,5 +1,5 @@
 
-import quizData from '@/app/quiz/quiz';
+import quizData from '@/app/quiz/quiz.js';
 
 export default function initializeQuiz() {
     // Initialisation des variables globales

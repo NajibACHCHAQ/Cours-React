@@ -10,7 +10,7 @@ interface Props {
 
 export const ActiveLink = ({ href, children }: Props) => {
     const router = useRouter();
-    console.log("router: ", router);
+    console.log("router: ", router.back);
     console.log("href: ", href)
 
 

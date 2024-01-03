@@ -10,8 +10,10 @@
     "clean": "rimraf out"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.39.1",
     "clsx": "^2.0.0",
     "firebase": "^10.7.1",
+    "jsdom": "^23.0.1",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",

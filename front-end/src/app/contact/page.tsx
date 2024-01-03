@@ -4,7 +4,7 @@ import { PartenairBar } from "@/ui/components/navigation/partenair-bar";
 import Navigation from "@/ui/components/navigation/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import '@/styles/styles-contact.css'
+import './styles-contact.css'
 
 export default function Contact() {
   return (
@@ -61,17 +61,17 @@ export default function Contact() {
           <div className="info-access">
             <h2 className="info-adr">Comment Venir</h2>
             <div className="details-info">
-              Transport en commun <Link href="https://www.divia.fr/itineraires" target="_blank"><Image src="../assets/logo-divia.png" alt="" width={100} height={100} /></Link>
+              Transport en commun <Link href="https://www.divia.fr/itineraires" target="_blank"><Image src="../assets/logo-divia.png" alt="" width={100} height={60} /></Link>
             </div>
             <div className="details-info">
-              Transport en commun <Link href="https://www.divia.fr/itineraires" target="_blank"><Image src="../assets/logo-sncf.png" alt="" width={100} height={100}/></Link>
+              Transport en commun <Link href="https://www.divia.fr/itineraires" target="_blank"><Image src="../assets/logo-sncf.png" alt="" width={100} height={60}/></Link>
             </div>
             <h2 className="info-adr">Comment Venir</h2>
             <div className="details-info">
-              Transport en commun <Link href="https://www.divia.fr/itineraires" target="_blank"><Image src="../assets/logo-divia.png" alt="" width={100} height={100} /></Link>
+              Transport en commun <Link href="https://www.divia.fr/itineraires" target="_blank"><Image src="../assets/logo-divia.png" alt="" width={100} height={60} /></Link>
             </div>
             <div className="details-info">
-              Transport en commun <Link href="https://www.divia.fr/itineraires" target="_blank"><Image src="../assets/logo-divia.png" alt="" width={100} height={100}/></Link>
+              Transport en commun <Link href="https://www.divia.fr/itineraires" target="_blank"><Image src="../assets/logo-divia.png" alt="" width={100} height={60}/></Link>
             </div>
           </div>
           <iframe
